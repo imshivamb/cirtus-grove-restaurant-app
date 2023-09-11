@@ -12,6 +12,20 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        karla: ['var(--font-karla)'],
+        markazi: ['var(--font-markazi)'],
+        poppins: ['var(--font-poppins)'],
+        league: ['var(--font-league-spartan)'],
+      },
+      colors: {
+        primary: '#EDEFEE',
+        orange: '#EE5B3C',
+        button: '#FFAF51',
+        green: '#1C7453',
+        lime: '#C6E631',
+        'white-400': 'rgba(255, 255, 255, 0.80)',
+      },
     },
   },
   plugins: [],
