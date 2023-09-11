@@ -12,7 +12,7 @@ const Testimonials = () => {
 
         <div className="flex lg:flex-row flex-col h-auto justify-between items-center my-8">
           {restaurantTestimonials.map((person) => (
-            <div className="border-1 bg-white mx-4 h-auto p-4 ">
+            <div key={person.name} className="border-1 bg-white mx-4 h-auto p-4 ">
               <p className="flex flex-1 px-6 pb-2">
                 {person.rating}
                 <span>
