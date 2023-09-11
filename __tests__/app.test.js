@@ -3,14 +3,18 @@ import { render, screen } from '@testing-library/react'
 
 import { initializeTimes, updateTimes } from '../app/reservations/page' // Import the functions to test
 
-// Test for initializeTimes
-test('initializeTimes should return the expected array of times', () => {
+test('initializeTimes should return the expected array of times', async () => {
+  // Create a mock implementation for fetchAPI
+  jest.mock('../api/api', () => ({
+    fetchAPI: jest.fn(() =>
+      Promise.resolve(['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']),
+    ),
+  }))
+
   const expectedTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']
-  const times = initializeTimes()
+  const times = await initializeTimes()
   expect(times).toEqual(expectedTimes)
 })
-
-// Test for updateTimes
 test('updateTimes should return the same times provided in the state', () => {
   // Mock the state with some available times
   const state = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']

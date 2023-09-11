@@ -12,7 +12,7 @@ const availableTimesReducer = (state, action) => {
   return state
 }
 
-const initializeTimes = async () => {
+export const initializeTimes = async () => {
   try {
     // Create a Date object to represent today's date
     const today = new Date()
@@ -28,7 +28,7 @@ const initializeTimes = async () => {
   }
 }
 
-const updateTimes = async (selectedDate) => {
+export const updateTimes = async (selectedDate) => {
   try {
     // Call the API to fetch available times for the selected date
     const availableTimes = await fetchAPI(selectedDate)
@@ -36,7 +36,7 @@ const updateTimes = async (selectedDate) => {
     return availableTimes
   } catch (error) {
     console.error('Error updating available times:', error)
-    // Handle the error gracefully, e.g., return an empty array
+
     return []
   }
 }
@@ -46,6 +46,7 @@ const BookingPage = () => {
   const [time, setTime] = useState('17:00')
   const [numberOfGuests, setNumberOfGuests] = useState('1')
   const [occasion, setOccasion] = useState('')
+  const [isOptionSelected, setIsOptionSelected] = useState(false)
 
   const [availableTimes, dispatch] = useReducer(
     availableTimesReducer,
@@ -69,7 +70,10 @@ const BookingPage = () => {
 
   const handleOccasionChange = (e) => {
     setOccasion(e.target.value)
+    const selectedValue = e.target.value
+    setIsOptionSelected(selectedValue !== '')
   }
+  console.log('isOptionSelected:', isOptionSelected)
   return (
     <main className="flex flex-col items-center justify-center min-h-screen h-auto bg-white">
       <BookingForm

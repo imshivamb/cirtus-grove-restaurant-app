@@ -9,6 +9,15 @@ import four from '../images/4.png'
 import instagram from '../images/instagram.png'
 import facebook from '../images/facebook.png'
 import youtube from '../images/youtube.png'
+import oneDish from '../menu images/1.jpg'
+import twoDish from '../menu images/2.jpg'
+import threeDish from '../menu images/3.jpg'
+import fourDish from '../menu images/4.jpg'
+import fiveDish from '../menu images/5.jpg'
+import sixDish from '../menu images/6.jpg'
+import sevenDish from '../menu images/7.jpg'
+import eightDish from '../menu images/8.jpg'
+import nineDish from '../menu images/9.jpg'
 
 export const navLinks = [
   { href: '/', label: 'Home' },
@@ -96,5 +105,90 @@ export const socialMedialinks = [
     icon: youtube,
     link: 'www.youtube.com',
     name: 'Youtube',
+  },
+]
+
+export const famousDishes = [
+  {
+    imgURL: oneDish,
+    name: 'Pizza Margherita',
+    description:
+      'A classic Italian pizza topped with tomato sauce, fresh mozzarella cheese, basil leaves, and a drizzle of olive oil.',
+    price: '$10.99',
+    tag: 'Order a Delivery',
+    icon: delivery,
+  },
+
+  {
+    imgURL: twoDish,
+    name: 'Sushi Sashimi',
+    description:
+      'A Japanese dish consisting of thinly sliced raw fish or seafood served without rice, often accompanied by soy sauce and wasabi.',
+    price: '$14.99',
+    tag: 'Order a Delivery',
+    icon: delivery,
+  },
+  {
+    imgURL: threeDish,
+    name: 'Tacos al Pastor',
+    description:
+      'A popular Mexican street food made with marinated and spit-roasted pork, usually served in small tortillas with pineapple and cilantro.',
+    price: '$9.25',
+    tag: 'Order a Delivery',
+    icon: delivery,
+  },
+  {
+    imgURL: fourDish,
+    name: 'Chicken Tikka Masala',
+    description:
+      'A creamy and tomato-based Indian curry dish with marinated and roasted chicken pieces, typically served with rice or naan bread.',
+    price: '$13.50',
+    tag: 'Order a Delivery',
+    icon: delivery,
+  },
+  {
+    imgURL: fiveDish,
+    name: 'Pasta Carbonara',
+    description:
+      'An Italian pasta dish made with eggs, Pecorino Romano cheese, guanciale (cured pork jowl), and black pepper.',
+    price: '$11.25',
+    tag: 'Order a Delivery',
+    icon: delivery,
+  },
+  {
+    imgURL: sixDish,
+    name: 'Pho',
+    description:
+      'A Vietnamese noodle soup made with beef or chicken broth, rice noodles, and various toppings such as herbs, bean sprouts, and lime.',
+    price: '$10.50',
+    tag: 'Order a Delivery',
+    icon: delivery,
+  },
+  {
+    imgURL: sevenDish,
+    name: 'Sushi Rolls',
+    description:
+      'Japanese sushi rolls made with seaweed, rice, and various fillings, such as avocado, cucumber, fish, and more.',
+    price: '$12.99',
+    tag: 'Order a Delivery',
+    icon: delivery,
+  },
+  {
+    imgURL: eightDish,
+    name: 'Lasagna',
+    description:
+      'An Italian pasta dish made with layers of flat pasta, ricotta cheese, meat sauce, and mozzarella cheese, baked to perfection.',
+    price: '$12.75',
+    tag: 'Order a Delivery',
+    icon: delivery,
+  },
+  {
+    imgURL: nineDish,
+    name: 'Miso Soup',
+    description:
+      'A traditional Japanese soup made with fermented soybean paste (miso), seaweed, tofu, and sometimes green onions or other ingredients.',
+    price: '$4.75',
+    tag: 'Order a Delivery',
+    icon: delivery,
   },
 ]
