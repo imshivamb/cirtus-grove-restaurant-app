@@ -24,7 +24,7 @@ const BookingForm = ({
 
   useEffect(() => {
     // Update available times when the date changes
-    updateTimes();
+    updateTimes()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [date, availableTimes])
 

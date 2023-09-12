@@ -10,9 +10,12 @@ const Testimonials = () => {
           Testimonials
         </h1>
 
-        <div className="flex lg:flex-row flex-col h-auto justify-between items-center my-8">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  h-auto justify-between items-center my-8 sm:gap-4">
           {restaurantTestimonials.map((person) => (
-            <div key={person.name} className="border-1 bg-white mx-4 h-auto p-4 ">
+            <div
+              key={person.name}
+              className="border-1 bg-white mx-4 h-auto lg:p-4   "
+            >
               <p className="flex flex-1 px-6 pb-2">
                 {person.rating}
                 <span>

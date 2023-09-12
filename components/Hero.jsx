@@ -5,8 +5,8 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <section className="pb-8  bg-green h-[400px] w-full">
-      <div className="flex items-center md:justify-between justify-center mx-auto max-w-screen-lg ">
-        <div className="flex flex-col items-start md:pb-10   max-w-[380px]">
+      <div className="flex items-center md:justify-between justify-center mx-auto max-w-screen-lg  ">
+        <div className="flex flex-col items-start md:pb-10   max-w-[380px] ">
           <p className="font-markazi text-[70px] font-bold leading-none text-orange  ">
             Citrus Grove
           </p>
@@ -23,7 +23,7 @@ const Hero = () => {
             </button>
           </Link>
         </div>
-        <div className="w-[380px] h-[430px] overflow-hidden rounded-xl pt-8  max-md:hidden  ">
+        <div className="w-[380px] h-[430px] overflow-hidden rounded-xl pt-8  max-lg:hidden  ">
           <Image
             src={hero}
             alt="hero-image"

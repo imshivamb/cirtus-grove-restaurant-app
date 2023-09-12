@@ -17,7 +17,7 @@ const Specials = () => {
         </Link>
       </div>
 
-      <div className="flex flex-wrap  justify-between ">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 sm:gap-4">
         {menuItems.map((item) => (
           <div
             key={item.name}

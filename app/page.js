@@ -19,7 +19,7 @@ export default function Home() {
       <section className="sm:px-16 px-8 sm:py-24 py-12">
         <Specials />
       </section>
-      <section className="bg-primary h-[500px] ">
+      <section className="bg-primary lg:h-[500px] h-auto">
         <Testimonials />
       </section>
       <section id="about">
