@@ -10,13 +10,13 @@ const Testimonials = () => {
           Testimonials
         </h1>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  h-auto justify-between items-center my-8 sm:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  my-8 gap-4">
           {restaurantTestimonials.map((person) => (
             <div
               key={person.name}
               className="border-1 bg-white mx-4 h-auto lg:p-4   "
             >
-              <p className="flex flex-1 px-6 pb-2">
+              <p className="flex flex-1 px-6 pb-2 pt-4">
                 {person.rating}
                 <span>
                   <Image src={star} alt="rating" width={24} height={24} />
@@ -33,7 +33,7 @@ const Testimonials = () => {
                   {person.name}
                 </span>
               </div>
-              <p className="pt-4 font-karla text-sm  px-2">{person.review}</p>
+              <p className="pt-4 font-karla text-sm  px-2 py-3">{person.review}</p>
             </div>
           ))}
         </div>

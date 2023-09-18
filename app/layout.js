@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
           <Navbar />
         </section>
         {children}
-        <section className="bg-primary h-[400px] sm:py-16 py-8">
+        <section className="bg-primary h-auto sm:py-12 py-6">
           <Footer />
         </section>
       </body>

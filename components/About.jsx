@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <div className="max-w-screen-lg w-full mx-auto">
       <div className="flex flex-wrap items-center justify-evenly w-auto">
-        <article className="flex flex-col items-start">
+        <article className="flex flex-col items-start mt-5 lg:mt-0">
           <h1 className="text-orange text-[70px] font-markazi font-medium leading-none">
             Citrus Grove
           </h1>
@@ -28,7 +28,7 @@ export const About = () => {
             src={restaurantone}
             alt="restaurant one"
             width={400}
-            className="pt-10"
+            className="pt-10 mb-10 lg:mb-0"
           />
           <Image
             src={restauranttwo}

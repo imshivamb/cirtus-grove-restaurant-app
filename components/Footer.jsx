@@ -6,7 +6,7 @@ import { navLinks, socialMedialinks } from '@/assets/constants'
 const Footer = () => {
   return (
     <>
-      <footer className="flex items-center justify-between mx-auto max-w-screen-lg w-full leading-none">
+      <footer className="flex flex-wrap flex-col md:flex-row items-center justify-between mx-auto max-w-screen-lg w-full leading-none">
         <div>
           <Link href="/">
             <Image
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <ul
           className="flex flex-col justify-start 
-            items-center gap-2 max-lg:hidden "
+            items-center gap-2 mt-4 "
         >
           <li className="text-xl font-karla leading-normal text-orange font-extrabold">
             Navigation
@@ -37,7 +37,7 @@ const Footer = () => {
         </ul>
         <div
           className="flex flex-col justify-start 
-            items-center gap-2 max-lg:hidden"
+            items-center gap-2 mt-4 "
         >
           <h3 className="font-karla font-bold text-orange text-xl leading-normal">
             Contact
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
         <div
           className="flex flex-col justify-start 
-            items-start gap-2 max-lg:hidden leading-none pb-[90px]"
+            items-start gap-2  leading-none pb-10 mt-4"
         >
           <h5 className="font-karla font-bold text-orange text-xl ">
             Social Media

@@ -5,8 +5,8 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <section className="pb-8  bg-green h-[400px] w-full">
-      <div className="flex items-center md:justify-between justify-center mx-auto max-w-screen-lg  ">
-        <div className="flex flex-col items-start md:pb-10   max-w-[380px] ">
+      <div className="flex items-center md:justify-between justify-center mx-auto px-6 max-w-screen-lg  ">
+        <div className="flex flex-col items-start md:pb-10 mt-5  max-w-[380px] ">
           <p className="font-markazi text-[70px] font-bold leading-none text-orange  ">
             Citrus Grove
           </p>
@@ -18,12 +18,12 @@ const Hero = () => {
             recipes served with a modern twist.
           </p>
           <Link href="/reservations">
-            <button className="px-6 py-3 bg-button mt-4 rounded-xl font-bold font-karla text-lg hover:text-white">
+            <button className="px-6 py-3 bg-button mt-4 rounded-xl font-bold font-karla text-lg hover:scale-105 hover:text-white">
               Reserve a Table
             </button>
           </Link>
         </div>
-        <div className="w-[380px] h-[430px] overflow-hidden rounded-xl pt-8  max-lg:hidden  ">
+        <div className="w-[380px] h-[430px] overflow-hidden rounded-xl pt-8  max-md:hidden  ">
           <Image
             src={hero}
             alt="hero-image"

@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <header className="sm:px-16 px-8 md:py-8 py-5 w-full absolute z-10 bg-white-400 shadow-md">
-      <nav className="max-w-screen-lg flex items-center lg:justify-between justify-between mx-auto  ">
+      <nav className="max-w-screen-lg flex flex-wrap items-center  mx-auto">
         <div>
           <Link href="/">
             <Image src={logo} alt="logo" width={240} height={70} />
@@ -27,21 +27,21 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`  flex-1 flex justify-end 
+          className={`flex-1 flex justify-end 
             items-center gap-10 max-lg:hidden`}
         >
           {navLinks.map((link) => (
-            <li key={link.label}>
+            <li key={link.label} className='hover:scale-105'>
               <Link
                 href={link.href}
-                className=" text-lg font-karla leading-normal text-[#1C7453] font-bold  hover:text-orange hover:underline"
+                className=" text-lg font-league leading-normal text-[#1C7453] font-bold  hover:text-orange hover:underline"
               >
                 {link.label}{' '}
               </Link>
             </li>
           ))}
         </ul>
-        <div onClick={toggleNav} className='lg:hidden px-3'>
+        <div onClick={toggleNav} className='lg:hidden px-3 cursor-pointer'>
           <AiOutlineMenu size={25} />
         </div>
         <div>
