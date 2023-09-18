@@ -17,11 +17,11 @@ const Specials = () => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto md:mx-4 border border-gray-100 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto md:mx-4  ">
         {menuItems.map((item) => (
           <div
             key={item.name}
-            className="flex  flex-col w-[270px] h-[440px] bg-primary rounded-xl"
+            className="flex  flex-col w-[270px] h-[440px] bg-primary border border-slate-200 rounded-xl"
           >
             <div className=" w-[270px] h-[188px] overflow-hidden rounded-t-xl">
               <Image

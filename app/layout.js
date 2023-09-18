@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head></head>
       <body
-        className={` ${poppins.variable} ${karla.variable} ${markazi.variable} ${league.variable}`}
+        className={`m-0 h-full ${poppins.variable} ${karla.variable} ${markazi.variable} ${league.variable}`}
       >
         <section className="h-[120px]">
           <Navbar />
